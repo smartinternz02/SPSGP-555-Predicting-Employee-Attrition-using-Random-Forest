@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EMPLOYEE ATTRITION</title>
+	<style>
+		body{
+			/*background-color: Orange;*/
+		}
+		.heading{
+			font-family: sans-serif;
+			color: white;
+			background-color:orange;
+			padding: 10px;
+		}
+		.emp{
+			text-align: center;
+            background-image: url("back2.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+			/*background-color: Aquamarine;
+			padding: 10px;*/
+			color:red;
+			font-size: 20px;
+			font-family: sans-serif;
+}
+         .footer{
+         	text-align: center;
+         	background-color:orange;
+         	height:40%;
+         	margin-top: 10px;
+			padding: 10px;
+         	color:white;
+         	font-size: 20px;
+         }
+         input[type="submit"]{
+          display: inline-block;
+        background-color: red;
+        border-radius: 10px;
+        border: 4px double #cccccc;
+        color: #eeeeee;
+        text-align: center;
+        font-size: 28px;
+        padding: 20px;
+        width: 200px;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+         }
+	</style>
+</head>
+<body>
+	<div class="heading">
+	<h1><center>EMPLOYEE ATTRITION PREDICTION</center></h1>
+</div>
+<form action="/predict" method="POST">
+<div class="emp">
+<p>Enter your satisfaction_level</p>
+
+<input type="text" name="satisfaction_level" required />
+
+<p>Enter your last_evaluation</p>
+
+<input type="text" name="last_evaluation" required />
+
+<p>Enter your number of projects</p>
+
+<input type="text" name="number_project" required />
+
+<p>Enter your average monthly hours of work</p>
+
+<input type="text" name="average_montly_hours" required />
+
+<p>Enter your time spent at the company</p>
+
+<input type="text" name="time_spend_company" required />
+
+<p>Enter your Work accident</p>
+
+<input type="text" name="Work_accident" required />
+
+<p>Enter your promotion of last 5 years</p>
+
+<input type="text" name="promotion_last_5years" required />
+
+<p>Enter your salary</p>
+
+<input type="text" name="salary"/><br>
+
+<br><label for="Department">Choose a Department:</label>
+<br>
+<br><select name="Department" id="Department" required><br>
+  <option value="0">SALES</option>
+  <option value="1">HR</option>
+  <option value="3">ACCOUNTS</option>
+  <option value="4">TECHNICAL</option>
+  <option value="5">MANAGEMENT</option>
+  <option value="6">PRODUCT_MGR</option>
+  <option value="7">MARKETING</option>
+  <option value="8">RandD</option>
+</select><br>
+<br><br><input type="submit" value="PREDICT"/>
+</div>
+</form>
+<div class="footer">
+<center><b>{{x}}</b></center>
+</div>
+</body>
+</html>
