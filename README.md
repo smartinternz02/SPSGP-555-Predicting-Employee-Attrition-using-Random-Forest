@@ -25,7 +25,8 @@ sales (Department in which they work for)<br>
 salary (Relative level of salary)<br>
 
 <h2>Approach</h2>
-We perform turnover analysis project by using Python’s Scikit-Learn library. We use Random Forest classifier for employee attrition and measure the accuracy of models that are built.
+We perform turnover analysis project by using Python’s Scikit-Learn library. We use Random Forest classifier for employee attrition and measure the accuracy of models that are built.Then we use Flask Frame Work with Machine Learning Model. In this section, we will be building a web application that is integrated into the model we built. A UI is provided for the uses where he has to enter the values for predictions. The enter values are given to the saved model and prediction is showcased on the UI.
+To build this flask application we should have basic knowledge of “HTML, CSS, Bootstrap, flask framework and python
 
 <h2>Acknowledgements</h2>
 Thanks to Kaggle for providing free access to the dataset
